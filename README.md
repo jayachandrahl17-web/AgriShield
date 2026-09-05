@@ -1,56 +1,90 @@
-# Welcome to your Expo app 👋
+# AgriShield 🌱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> AI-powered Crop Health, Risk Prediction & Safe-Input Intelligence Platform
 
-## Get started
+AgriShield is a smart agriculture platform designed to help farmers monitor crop health, identify disease and pest risks, understand field conditions, and make safer agricultural decisions.
 
-1. Install dependencies
+The platform combines **crop imagery, field information, sensor data, AI/ML-based analysis, and risk intelligence** to help farmers take timely action and reduce crop and export-related losses.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚜 AgriShield Approach
 
-   ```bash
-   npx expo start
-   ```
+AgriShield follows a complete crop-health workflow:
 
-In the output, you'll find options to open the app in a
+**Detect → Understand → Predict → Act → Monitor → Verify**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Instead of functioning only as a disease-detection application, AgriShield aims to provide a complete decision-support system for farmers.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ✨ Key Features
 
-When you're ready, run:
+### 🌿 Crop Health Monitoring
+Monitor the overall health condition of crops and fields.
 
-```bash
-npm run reset-project
-```
+### 📷 Crop Scanning
+Use crop images to identify visible disease and pest-related symptoms.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 🧠 Risk Intelligence
+Analyze crop, field, weather, treatment, and sensor information to identify potential risks.
 
-### Other setup steps
+### 📡 Field Sensor Data
+Integrate sensor information such as:
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- Soil moisture
+- Temperature
+- Soil pH
+- Residue-related measurements
 
-## Learn more
+### 🧪 Residue Risk Awareness
+Help farmers understand potential pesticide/residue risks before harvesting or export.
 
-To learn more about developing your project with Expo, look at the following resources:
+### 📦 Export Readiness
+Provide an overview of crop readiness based on crop health, residue risk, and other relevant factors.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### ⚠️ Disease & Pest Risk
+Present risk levels and actionable information for potential disease and pest threats.
 
-## Join the community
+### 💡 Safer Recommendations
+Provide farmers with guidance on appropriate interventions and treatment decisions.
 
-Join our community of developers creating universal apps.
+### 📊 Crop Health History
+Track previous crop scans, field conditions, risks, and actions over time.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+# 📱 Mobile Application
+
+The current repository contains the **AgriShield mobile frontend**.
+
+The application is built using:
+
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Expo Vector Icons
+
+---
+
+## 🧭 Application Structure
+
+```text
+AgriShield/
+│
+├── assets/
+│
+├── src/
+│   └── app/
+│       ├── _layout.tsx
+│       ├── index.tsx
+│       ├── scan.tsx
+│       ├── alerts.tsx
+│       └── history.tsx
+│
+├── .gitignore
+├── app.json
+├── package.json
+├── package-lock.json
+└── README.md
