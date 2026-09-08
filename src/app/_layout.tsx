@@ -6,10 +6,8 @@ export default function RootLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-
         tabBarActiveTintColor: "#315D3A",
         tabBarInactiveTintColor: "#8A938A",
-
         tabBarStyle: {
           height: 70,
           paddingBottom: 10,
@@ -18,9 +16,8 @@ export default function RootLayout() {
           borderTopWidth: 0,
           elevation: 10,
         },
-
         tabBarLabelStyle: {
-          fontSize: 12,
+          fontSize: 11,
           fontWeight: "600",
         },
       }}
@@ -30,56 +27,47 @@ export default function RootLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons
-              name="home"
-              size={size}
-              color={color}
-            />
+            <Ionicons name="home" size={size} color={color} />
           ),
         }}
       />
-
       <Tabs.Screen
         name="scan"
         options={{
           title: "Scan",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons
-              name="scan-outline"
-              size={size}
-              color={color}
-            />
+            <Ionicons name="scan-outline" size={size} color={color} />
           ),
         }}
       />
-
+      <Tabs.Screen
+        name="map"
+        options={{
+          title: "Map",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="map-outline" size={size} color={color} />
+          ),
+        }}
+      />
       <Tabs.Screen
         name="alerts"
         options={{
           title: "Risk",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons
-              name="warning-outline"
-              size={size}
-              color={color}
-            />
+            <Ionicons name="warning-outline" size={size} color={color} />
           ),
         }}
       />
-
       <Tabs.Screen
         name="history"
         options={{
           title: "History",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons
-              name="time-outline"
-              size={size}
-              color={color}
-            />
+            <Ionicons name="time-outline" size={size} color={color} />
           ),
         }}
       />
+      <Tabs.Screen name="sensors" options={{ href: null }} />
     </Tabs>
   );
 }
